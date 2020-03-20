@@ -1,0 +1,35 @@
+{
+  "name": "Hangout hands",
+  "version": "1.0",
+  "description": "A way for people in a hangout meeting to indicate that they have something to say.",
+  "permissions": ["activeTab","declarativeContent","storage","tabs"],
+
+  // Adding https://www.gstatic.com/ to the external scripts authorized domains so we can import the firebase JS SDK and access the Realtime Database as well as Firebase Storage.
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+
+  "page_action": {
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://meet.google.com/*"],
+      "js": ["res/jquery-3.4.1.min.js","res/firebase-app.js","res/firebase-firestore.js","content.js"],
+      "css": ["style.css"]
+    }
+ ],
+
+  "manifest_version": 2
+}
