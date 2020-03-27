@@ -2,7 +2,6 @@
 	position: absolute;
     width: 160px;
     height: 50px;
-    /* opacity: 0.3; */
     z-index: 100;
     background: rgb(0, 0, 0);
     text-align: center;
@@ -14,16 +13,72 @@
     left: calc(50vw - 80px);
 }
 
+#like{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    z-index: 100;
+    background: rgba(0, 255, 0, 0.3);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+    border-radius: 15px;
+    color: white;
+    top: calc(100vh - 160px);
+    left: calc(50vw - -90px);
+}
+
+#like_bubble{
+    background: rgba(0, 255, 0, 0.3);
+    color: white;
+}
+
+#dislike{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    z-index: 100;
+    background: rgba(255, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+    border-radius: 15px;
+    color: white;
+    top: calc(100vh - 160px);
+    left: calc(50vw - 250px);
+}
+
+#dislike_bubble{
+    background: rgba(255, 0, 0, 0.3);
+    color: white;
+}
+
+#emoji{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+    border-radius: 15px;
+    color: white;
+    left: calc(50vw - 80px);
+    top: calc(100vh - 220px);
+}
+
+
 #people{
+    left: 10px;
+    width: 250px;
+    top: 10px;
 	position: absolute;
-    width: 231px;
     z-index: 100;
     text-align: center;
     font-size: 1rem;
     line-height: inherit;
     color: black;
-    top: 60px;
-    left: calc(100vw - 231px);
     background: rgba(0,0,0,0);
     border-radius: 15px;
 }
